@@ -8,6 +8,8 @@ Group:		X11/Applications
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.gz
 # Source0-md5:	cd1eb1ce62a52cf69f4df9041a886794
 URL:		http://clay.ll.pl/projects.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 2.2.0
 BuildRequires:	gtk+2-devel >= 2.2.0
