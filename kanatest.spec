@@ -1,5 +1,5 @@
-Summary:	Kanatest is a simple hiragana and katakana drill tool
-Summary(pl):	- -
+Summary:	Kanatest - a simple hiragana and katakana drill tool
+Summary(pl):	Kanatest - proste narzêdzie do æwiczenia hiragany i katakany
 Name:		kanatest
 Version:	0.3.4
 Release:	1
@@ -14,16 +14,15 @@ BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Kanatest is a simple hiragana and katakana drill tool
+Kanatest is a simple hiragana and katakana drill tool.
 
 %description -l pl
-- -
+Kanatest to proste narzêdzie do æwiczenia hiragany i katakany.
 
 %prep
 %setup -q
 
 %build
-rm -f missing
 #%%{__gettextize}
 %{__aclocal}
 %{__autoconf}
@@ -35,6 +34,7 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/%{name}/%{name}}
+
 find data/ -name 'Makefile*' -exec rm {} \;
 cp -r data/* $RPM_BUILD_ROOT%{_datadir}/games/%{name}/%{name}
 install src/kanatest $RPM_BUILD_ROOT%{_bindir} 
