@@ -1,12 +1,12 @@
 Summary:	Kanatest - a simple hiragana and katakana drill tool
 Summary(pl):	Kanatest - proste narzêdzie do æwiczenia hiragany i katakany
 Name:		kanatest
-Version:	0.3.4
+Version:	0.3.6
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://clay.ll.pl/download/%{name}-%{version}.tar.gz
-# Source0-md5:	0727789e69c227551c64ddde4570b495
+# Source0-md5:	cd1eb1ce62a52cf69f4df9041a886794
 URL:		http://clay.ll.pl/projects.html
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 2.2.0
