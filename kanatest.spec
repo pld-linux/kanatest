@@ -33,10 +33,10 @@ Kanatest to proste narzêdzie do æwiczenia hiragany i katakany.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/%{name}/%{name}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/%{name}}
 
 find data/ -name 'Makefile*' -exec rm {} \;
-cp -r data/* $RPM_BUILD_ROOT%{_datadir}/games/%{name}/%{name}
+cp -r data/* $RPM_BUILD_ROOT%{_datadir}/games/%{name}
 install src/kanatest $RPM_BUILD_ROOT%{_bindir} 
 
 #fix me
