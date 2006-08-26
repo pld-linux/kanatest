@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=Kanatest
 Comment=Test your hiragana and katakana
-Comment[pl]=Sprawd¼ swoj± znajomo¶æiragany i katakany
+Comment[pl]=Sprawdź swoją znajomość hiragany i katakany
 Exec=kanatest
 Icon=kanatest-ico.png
 Terminal=false
 Type=Application
-Categories=X11;Education;Languages
+Categories=X11;Education;Languages;
 Encoding=UTF-8
 # vi: encoding=utf-8
