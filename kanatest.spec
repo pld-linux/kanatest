@@ -43,12 +43,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/%{name},%{_mandir}/man1,
 find data/ -name 'Makefile*' -exec rm {} \;
 cp -r data/* $RPM_BUILD_ROOT%{_datadir}/games/%{name}
 install src/kanatest $RPM_BUILD_ROOT%{_bindir}
-#install -d $RPM_BUILD_ROOT%{_mandir}/man1
-#install -d $RPM_BUILD_ROOT%{_desktopdir}
-#install -d $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/
-install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/
-install %{SOURCE1} $RPM_BUILD_ROOT%{_pixmapsdir}/
+install %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 #fix me
 #%%find_lang %{name}
@@ -59,8 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README AUTHORS
-%{_mandir}/man1/%{name}.1*
 %attr(755,root,root) %{_bindir}/kanatest
 %{_datadir}/games/%{name}
+%{_mandir}/man1/%{name}.1*
 %{_desktopdir}/*
 %{_pixmapsdir}/*
