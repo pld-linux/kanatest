@@ -59,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kanatest
 %{_datadir}/games/%{name}
 %{_mandir}/man1/%{name}.1*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
