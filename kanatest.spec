@@ -1,5 +1,5 @@
 Summary:	Kanatest - a simple hiragana and katakana drill tool
-Summary(pl):	Kanatest - proste narzêdzie do æwiczenia hiragany i katakany
+Summary(pl.UTF-8):   Kanatest - proste narzÄ™dzie do Ä‡wiczenia hiragany i katakany
 Name:		kanatest
 Version:	0.3.6
 Release:	3
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Kanatest is a simple hiragana and katakana drill tool.
 
-%description -l pl
-Kanatest to proste narzêdzie do æwiczenia hiragany i katakany.
+%description -l pl.UTF-8
+Kanatest to proste narzÄ™dzie do Ä‡wiczenia hiragany i katakany.
 
 %prep
 %setup -q
