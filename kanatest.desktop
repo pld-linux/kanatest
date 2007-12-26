@@ -6,5 +6,5 @@ Exec=kanatest
 Icon=kanatest-ico
 Terminal=false
 Type=Application
-Categories=X11;Education;Languages;
+Categories=Education;Languages;
 # vi: encoding=utf-8
